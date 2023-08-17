@@ -25,7 +25,7 @@ const connectDB = async (): Promise<void> => {
     try {
         const db: Db = client.db('zmk-electrical');
         const servicesCollection: Collection<Document> = db.collection('services');
-        const projectCollection: Collection<Document> = db.collection('project');
+        const projectCollection: Collection<Document> = db.collection('projects');
 
         console.log('Database connection established successfully!')
 
